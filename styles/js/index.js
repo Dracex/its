@@ -3,7 +3,7 @@ $ (document).ready (function () {
     var id = $ (this).attr ("id");
     if (id == "salidas") {
       cargarSalidas ();
-    } else if( id == "bus") {
+    } else if (id == "bus") {
       cargarBus ();
     }
     $ (".tab").removeClass ("activeTab");
@@ -11,4 +11,7 @@ $ (document).ready (function () {
     $ (".contentDiv").addClass ("hidden");
     $ ("#" + id + "Div").removeClass ("hidden");
   })
+
+  var heightFooter = $ ("#footerPagina").height ();
+  $("body").css("padding-bottom", heightFooter);
 })
