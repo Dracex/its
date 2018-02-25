@@ -1,0 +1,17 @@
+* {
+  font-family: sans-serif;
+}
+
+.seccion {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.divCMS {
+  margin: 10px;
+}
+
+.hidden {
+  display: none
+}

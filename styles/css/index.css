@@ -1,0 +1,133 @@
+/*General*/
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+}
+*::selection {
+  background-color: #F00;
+  color: #FFF;
+}
+header {
+  border: 1px solid black;
+  padding: 20px;
+}
+.wrapper {
+  padding: 10px 20px;
+}
+#tabs {
+  background-color: #600;
+  display: flex;
+}
+.tab {
+  background-color: #C00;
+  /*border: 1px solid black;*/
+  border-radius: 10px 10px 0px 0px;
+  color: #CCC;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.3s ease 0s;
+}
+.tab:hover {
+  background-color: #F00;
+  color: #FFF;
+}
+.activeTab {
+  background-color: #FFF;
+  color: #F00;
+}
+.hidden {
+  display: none
+}
+footer {
+  border: 1px solid black;
+  padding: 20px;
+}
+/*Fin General*/
+
+/*Campos*/
+input[type=text], input[type=number], select {
+  border: 1px solid #F00;
+  padding: 10px;
+}
+
+button {
+  background-color: #F00;
+  border: 1px solid #F00;
+  color: #FFF;
+  font-weight: bold;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #FFF;
+  /*border: 1px solid #F00;*/
+  color: #F00;
+}
+
+.campos {
+  display: flex;
+  margin: 10px;
+}
+
+.campos button, .campos input, .campos select {
+  font-size: 12pt;
+}
+
+.campos > input, .campos > select, .campos > button {
+  max-height: 40px;
+}
+
+option {
+  border: #F00;
+}
+
+.izquierda {
+  border-radius: 5px 0px 0px 5px;
+  border-right: none !important;
+}
+.centro {
+  border-radius: 0px;
+}
+.derecha {
+  border-radius: 0px 5px 5px 0px;
+  border-left: none !important;
+}
+.independiente {
+  border-radius: 5px;
+  font-size: 12pt;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*Fin Campos*/
+
+/*Inicio Tabla*/
+#tableHoteles, #tableBuses {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#tableHoteles th, #tableHoteles td, #tableBuses th, #tableBuses td {
+  /*border-left: 1px solid #EAA;*/
+  padding: 10px;
+}
+
+#tableHoteles th:first-child, #tableHoteles td:first-child, #tableBuses th:first-child, #tableBuses td:first-child {
+  border-left: 0px;
+}
+
+#tableHoteles tr:nth-child(odd), #tableBuses tr:nth-child(odd) {
+  background-color: #EAA;
+}
+
+.gestion {
+  display: inline-flex;
+}
+/*Fin Tabla*/
+
+.divHotelesSalida {
+  margin: 10px;
+  margin-bottom: 30px;
+}
