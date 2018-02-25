@@ -11,8 +11,8 @@
       ?>
       <!-- CSS -->
       <link rel="stylesheet" href="styles/css/index.css"/>  
-<!--      <link rel="stylesheet" href="styles/css/bus.css"/>
-      <link rel="stylesheet" href="styles/css/pax.css"/>-->
+      <!--      <link rel="stylesheet" href="styles/css/bus.css"/>
+            <link rel="stylesheet" href="styles/css/pax.css"/>-->
 
       <!-- JS -->
       <script src="styles/js/index.js"></script>
@@ -24,10 +24,11 @@
       ?>
       <!-- CSS -->
       <link rel="stylesheet" href="../styles/css/cms.css"/>  
-      
+
       <!-- JS -->
       <script src="../styles/js/cms.js"></script>
       <?php
     }
   ?>
+
 </head>
