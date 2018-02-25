@@ -3,7 +3,7 @@
   $stmtZona = $conn->prepare ('SELECT * FROM infoZona order by nombre');
   $stmtZona->execute ();
 
-  $output .= "<option value=''>Selecciona una Zona</option>";
+  $output .= "<option value='' disabled>Selecciona una Zona</option>";
 
   if ($cargar == "cargar") {
     while ($datosZona = $stmtZona->fetch (PDO::FETCH_ASSOC)) {
