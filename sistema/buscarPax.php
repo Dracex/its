@@ -28,7 +28,7 @@
       $stmtBusquedaHotel = $conn->prepare ('SELECT * FROM infoHoteles WHERE nombre LIKE "%' . $datosBusquedaNombre['hotel'] . '%" ORDER BY nombre');
       $stmtBusquedaHotel->execute ();
       while ($datosBusquedaHotel = $stmtBusquedaHotel->fetch (PDO::FETCH_ASSOC)) {
-        $stmtBusquedaSalida = $conn->prepare ('SELECT * FROM salida WHERE idHotel LIKE "%' . $datosBusquedaHotel['idHotel'] . '%" and despedido != 1');
+        $stmtBusquedaSalida = $conn->prepare ('SELECT * FROM salida WHERE idHotel LIKE "%' . $datosBusquedaHotel['idHotel'] . '%" AND idZona LIKE "%' . $datosBusquedaHotel['idZona'] . '%" AND despedido != 1');
         $stmtBusquedaSalida->execute ();
         while ($datosBusquedaSalida = $stmtBusquedaSalida->fetch (PDO::FETCH_ASSOC)) {
           $stmtBusquedaBus = $conn->prepare ('SELECT * FROM infoBus WHERE bus = ' . $datosBusquedaSalida['bus'] . '');
@@ -55,7 +55,7 @@
       $stmtBusquedaHotel = $conn->prepare ('SELECT * FROM infoHoteles WHERE nombre LIKE "%' . $datosBusquedaNombre['hotel'] . '%" ORDER BY nombre');
       $stmtBusquedaHotel->execute ();
       while ($datosBusquedaHotel = $stmtBusquedaHotel->fetch (PDO::FETCH_ASSOC)) {
-        $stmtBusquedaSalida = $conn->prepare ('SELECT * FROM salida WHERE idHotel LIKE "%' . $datosBusquedaHotel['idHotel'] . '%" and despedido != 1');
+        $stmtBusquedaSalida = $conn->prepare ('SELECT * FROM salida WHERE idHotel LIKE "%' . $datosBusquedaHotel['idHotel'] . '%" AND idZona LIKE "%' . $datosBusquedaHotel['idZona'] . '%" AND despedido != 1');
         $stmtBusquedaSalida->execute ();
         while ($datosBusquedaSalida = $stmtBusquedaSalida->fetch (PDO::FETCH_ASSOC)) {
           $stmtBusquedaBus = $conn->prepare ('SELECT * FROM infoBus WHERE bus = ' . $datosBusquedaSalida['bus'] . '');

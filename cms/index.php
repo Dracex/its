@@ -8,8 +8,8 @@
     <a href="../"><button id="volver" style="float:right">&lArr; Volver</button></a>
     <div id="pax" class="seccion">
       <b>Pasajeros</b><br>
-      <form method="POST" action="">
-        <input type="file"><br>
+      <form method="POST" enctype="multipart/form-data" action="../sistema/cms/importarPasajeros.php">
+        <input type="file" name="archivo"><br>
         <input type="submit" value="Enviar">
       </form>
     </div>

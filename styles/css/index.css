@@ -164,3 +164,11 @@ option {
 #paxDivDiv {
   margin-top: 10px;
 }
+.barraExterior {
+  border-radius: 5px; 
+  overflow: hidden;
+}
+.barraInterior {
+  height: 100%;
+  margin: 0px;
+}

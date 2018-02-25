@@ -26,7 +26,6 @@ function cargarBus () {
   $.ajax ({
     url: "sistema/informacionBuses.php?accion=cargar",
     success: function (response) {
-      console.log (response);
       $ ("#tableBuses").html ("");
       $ ("#tableBuses").append (response);
     }

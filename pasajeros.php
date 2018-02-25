@@ -2,7 +2,7 @@
   <div id="paxDivDiv">
     <input type="radio" class="searchMode" name="searchMode" id="searchModeNombre" value="Nombre" checked style="margin-left: 10px"><label for="searchModeNombre">Nombre</label>
     <input type="radio" class="searchMode" name="searchMode" id="searchModeHotel" value="Hotel"><label for="searchModeHotel">Hotel</label>    
-  </div><br>
+  </div>
   <div class="campos">
     <input type="text" placeholder="Nombre" id="paxSearch" class="izquierda">
     <input type="number" placeholder="Cantidad" id="paxCant" class="centro">
